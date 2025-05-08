@@ -1,0 +1,54 @@
+import React, { ReactNode } from 'react';
+import LeftPanel from '../LeftPanel/LeftPanel';
+import RightPanel from '../RightPanel/RightPanel';
+import TitleSection from '../Content/TitleSection';
+import TextSection from '../Content/TextSection';
+
+interface SplitLayoutProps {
+  imageUrl: string;
+  children: ReactNode;
+}
+
+const SplitLayout: React.FC<SplitLayoutProps> = ({ imageUrl, children }) => {
+  return (
+    <div className="flex flex-col lg:flex-row w-full bg-white">
+      <div className="flex flex-col lg:flex-col lg:h-[100vh] lg:w-[40%] lg:fixed lg:left-0 bg-[rgb(11,61,130)] min-h-[calc(100vh-4rem)] lg:min-h-0">
+        <div className="w-full h-[60vh] min-h-[400px] lg:w-full lg:h-full">
+          <LeftPanel imageUrl={imageUrl} />
+        </div>
+        <div className="w-full lg:hidden bg-[rgb(11,61,130)] p-8 flex justify-center flex-1">
+          <div className="max-w-xl w-full">
+            <TitleSection />
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-[60%] lg:ml-[40%] w-full mt-0 lg:mt-0 bg-white">
+        <RightPanel>
+          <div className="hidden lg:block">
+            <TitleSection />
+          </div>
+          <TextSection />
+          <footer className="mt-24 pt-8 border-t border-slate-200/10 text-slate-400 text-sm flex items-center justify-between">
+            <p>© 2025 Port</p>
+            <a
+              href="https://github.com/ykmsd/soredemoikokugurashi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              <img
+                src="/github-mark.svg"
+                alt="GitHub"
+                width={16}
+                height={16}
+                className="opacity-75 hover:opacity-100 transition-opacity"
+              />
+            </a>
+          </footer>
+        </RightPanel>
+      </div>
+    </div>
+  );
+};
+
+export default SplitLayout;
