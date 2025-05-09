@@ -1,6 +1,6 @@
 # それでも異国暮らし
 
-<img src="https://raw.githubusercontent.com/ykmsd/soredemoikokugurashi/refs/heads/main/public/cover.webp" alt="それでも異国暮らし" width="300" />
+<img src="https://raw.githubusercontent.com/ykmsd/soredemoikokugurashi/refs/heads/main/public/cover.webp?token=GHSAT0AAAAAADA2SCRGIBVGZJAJWF2AHW6E2A5SJ4A" alt="それでも異国暮らし" width="300" />
 
 ## ZINEについて
 
