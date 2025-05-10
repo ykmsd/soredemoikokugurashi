@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useCallback } from 'react';
+import { Mail } from 'lucide-react';
 import LeftPanel from '../LeftPanel/LeftPanel';
 import RightPanel from '../RightPanel/RightPanel';
 import TitleSection from '../Content/TitleSection';
@@ -30,20 +31,29 @@ const SplitLayout: React.FC<SplitLayoutProps> = ({ imageUrl, children }) => {
           <TextSection />
           <footer className="mt-24 pt-8 border-t border-slate-200/10 text-slate-400 text-sm flex items-center justify-between">
             <p>© 2025 Port</p>
-            <a
-              href="https://github.com/ykmsd/soredemoikokugurashi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-slate-600 transition-colors"
-            >
-              <img
-                src="/github-mark.svg"
-                alt="GitHub"
-                width={16}
-                height={16}
-                className="opacity-75 hover:opacity-100 transition-opacity"
-              />
-            </a>
+            <div className="flex items-center gap-4">
+              <a
+                href="mailto:soredemoikokugurashi@gmail.com"
+                className="text-slate-400 hover:text-slate-600 transition-colors"
+                aria-label="Send email"
+              >
+                <Mail size={16} className="opacity-75 hover:opacity-100 transition-opacity" />
+              </a>
+              <a
+                href="https://github.com/ykmsd/soredemoikokugurashi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-slate-600 transition-colors"
+              >
+                <img
+                  src="/github-mark.svg"
+                  alt="GitHub"
+                  width={16}
+                  height={16}
+                  className="opacity-75 hover:opacity-100 transition-opacity"
+                />
+              </a>
+            </div>
           </footer>
         </RightPanel>
       </div>
