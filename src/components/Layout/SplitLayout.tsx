@@ -1,5 +1,4 @@
 import React, { ReactNode, useCallback } from 'react';
-import { Send } from 'lucide-react';
 import LeftPanel from '../LeftPanel/LeftPanel';
 import RightPanel from '../RightPanel/RightPanel';
 import TitleSection from '../Content/TitleSection';
@@ -43,7 +42,13 @@ const SplitLayout: React.FC<SplitLayoutProps> = ({ imageUrl, children }) => {
                 className="text-slate-400 hover:text-slate-600 transition-colors"
                 aria-label="Share on Bluesky"
               >
-                <Send size={16} className="opacity-75 hover:opacity-100 transition-opacity" />
+                <img
+                  src="/bluesky.svg"
+                  alt="Bluesky"
+                  width={16}
+                  height={16}
+                  className="opacity-75 hover:opacity-100 transition-opacity"
+                />
               </button>
               <a
                 href="https://github.com/ykmsd/soredemoikokugurashi"
