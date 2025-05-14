@@ -29,11 +29,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 32px;
   background: linear-gradient(to top, rgb(255 255 255) 0%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
   opacity: 1;
   transition: opacity 0.2s ease;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .updates-container.at-bottom::after {
