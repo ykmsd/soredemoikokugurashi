@@ -17,12 +17,13 @@ const TextSection: React.FC = () => {
         <h2 className="text-slate-900 font-title font-normal text-lg lg:text-xl mb-6">
           更新情報
         </h2>
-        <div className="relative max-h-24 overflow-y-scroll pr-4 mb-12 border border-slate-200 rounded-lg p-6">
-          <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+        <div className="max-h-24 overflow-y-scroll pr-4 mb-12 border border-slate-200 rounded-lg p-6">
           <ul className="text-slate-600 text-sm leading-relaxed font-light list-none space-y-3">
             <li><span className="inline-block w-14">5月14日:</span><a href="https://ykmsd.booth.pm/" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900 transition-colors">BOOTH</a>で購入可能になりました。</li>
             <li><span className="inline-block w-14">5月2日:</span>姉妹書の紹介を追加しました。</li>
             <li><span className="inline-block w-14">5月1日:</span>Webサイトを公開しました。</li>
+            <li><span className="inline-block w-14">4月30日:</span>原稿の最終校正が完了しました。</li>
+            <li><span className="inline-block w-14">4月15日:</span>表紙デザインが完成しました。</li>
           </ul>
         </div>
       </ContentSection>
