@@ -19,32 +19,20 @@
   }
 }
 
-/* Scroll shadow utility */
-@layer utilities {
-  .group-scrolled\:opacity-100 {
-    opacity: 0;
-  }
-  
-  .overflow-y-scroll:not([style*="overflow-y: hidden"]):not(:last-child) ~ .group-scrolled\:opacity-100 {
-    opacity: 1;
-  }
-}
-
 /* Custom scrollbar styles */
-.overflow-y-scroll {
+.overflow-y-auto {
   scrollbar-width: thin;
   scrollbar-color: rgb(203 213 225) transparent;
 }
 
-.overflow-y-scroll::-webkit-scrollbar {
+.overflow-y-auto::-webkit-scrollbar {
   width: 6px;
 }
 
-.overflow-y-scroll::-webkit-scrollbar-track {
+.overflow-y-auto::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.overflow-y-scroll::-webkit-scrollbar-thumb {
+.overflow-y-auto::-webkit-scrollbar-thumb {
   background-color: rgb(203 213 225);
   border-radius: 3px;
-}
