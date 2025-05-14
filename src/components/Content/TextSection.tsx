@@ -17,7 +17,7 @@ const TextSection: React.FC = () => {
         <h2 className="text-slate-900 font-title font-normal text-lg lg:text-xl mb-6">
           更新情報
         </h2>
-        <div className="updates-container h-48 border border-slate-200 rounded-lg">
+        <div className="updates-container h-24 border border-slate-200 rounded-lg">
           <div className="h-full overflow-y-auto p-4" onScroll={(e) => {
             const target = e.currentTarget;
             const isAtBottom = Math.abs(target.scrollHeight - target.scrollTop - target.clientHeight) < 1;
