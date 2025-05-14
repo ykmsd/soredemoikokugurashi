@@ -19,6 +19,17 @@
   }
 }
 
+/* Scroll shadow utility */
+@layer utilities {
+  .group-scrolled\:opacity-100 {
+    opacity: 0;
+  }
+  
+  .overflow-y-scroll:not([style*="overflow-y: hidden"]):not(:last-child) ~ .group-scrolled\:opacity-100 {
+    opacity: 1;
+  }
+}
+
 /* Custom scrollbar styles */
 .overflow-y-scroll {
   scrollbar-width: thin;
