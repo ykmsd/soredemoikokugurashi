@@ -17,12 +17,18 @@ const TextSection: React.FC = () => {
         <h2 className="text-slate-900 font-title font-normal text-lg lg:text-xl mb-6">
           更新情報
         </h2>
-        <div className="max-h-48 overflow-y-auto pr-4 mb-12">
-          <ul className="text-slate-600 text-sm leading-relaxed font-light list-none space-y-3">
+        <div className="updates-container h-48 border border-slate-200 rounded-lg">
+          <div className="h-full overflow-y-auto p-4" onScroll={(e) => {
+            const target = e.currentTarget;
+            const isAtBottom = Math.abs(target.scrollHeight - target.scrollTop - target.clientHeight) < 1;
+            target.parentElement?.classList.toggle('at-bottom', isAtBottom);
+          }}>
+            <ul className="text-slate-600 text-sm leading-relaxed font-light list-none space-y-3">
             <li><span className="inline-block w-14">5月14日:</span><a href="https://ykmsd.booth.pm/" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900 transition-colors">BOOTH</a>で購入可能になりました。</li>
             <li><span className="inline-block w-14">5月2日:</span>姉妹書の紹介を追加しました。</li>
             <li><span className="inline-block w-14">5月1日:</span>Webサイトを公開しました。</li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </ContentSection>
 
