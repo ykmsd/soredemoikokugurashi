@@ -17,7 +17,7 @@ const TextSection: React.FC = () => {
         <h2 className="text-slate-900 font-title font-normal text-lg lg:text-xl mb-6">
           更新情報
         </h2>
-        <div className="h-24 border border-slate-200 rounded-lg overflow-hidden">
+        <div className="h-28 border border-slate-200 rounded-lg overflow-hidden">
           <div className="updates-container h-full">
             <div className="h-full overflow-y-auto p-4" onScroll={(e) => {
             const target = e.currentTarget;
