@@ -25,6 +25,7 @@ const TextSection: React.FC = () => {
             target.parentElement?.classList.toggle('at-bottom', isAtBottom);
             }}>
               <ul className="text-slate-600 text-sm leading-relaxed font-light list-none space-y-3">
+                <li><span className="inline-block w-14">5月21日:</span><a href="https://bookandbeer.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900 transition-colors">本屋B&B</a>さんで購入可能になりました。</li>
                 <li><span className="inline-block w-14">5月14日:</span><a href="https://ykmsd.booth.pm/" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900 transition-colors">BOOTH</a>で購入可能になりました。</li>
                 <li><span className="inline-block w-14">5月2日:</span>姉妹書の紹介を追加しました。</li>
                 <li><span className="inline-block w-14">5月1日:</span>Webサイトを公開しました。</li>
