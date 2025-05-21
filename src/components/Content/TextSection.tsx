@@ -37,8 +37,18 @@ const TextSection: React.FC = () => {
 
       <ContentSection>
         <h2 className="text-slate-900 font-title font-normal text-lg lg:text-xl mb-6">
-          取り扱い書店
+          購入可能場所
         </h2>
+        <Paragraph className="text-slate-600 text-base leading-relaxed font-light">
+          <a
+            href="https://ykmsd.booth.pm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-slate-900 transition-colors"
+          >
+            BOOTH(オンライン)
+          </a>
+        </Paragraph>
         <Paragraph className="text-slate-600 text-base leading-relaxed font-light">
           <a
             href="https://bookandbeer.com/"
