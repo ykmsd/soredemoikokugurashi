@@ -46,7 +46,7 @@ const TextSection: React.FC = () => {
             rel="noopener noreferrer"
             className="underline hover:text-slate-900 transition-colors"
           >
-            BOOTH(オンライン)
+            BOOTH (オンライン)
           </a>
         </Paragraph>
         <Paragraph className="text-slate-600 text-base leading-relaxed font-light">
